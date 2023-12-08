@@ -178,5 +178,22 @@ for (type, numOfWheels) in vehicles
 }
 
 
+// functions
 
+func printHelloWorld()
+{
+    print("Hello world!")
+}
+
+func returnHelloWorld() -> String {
+    return "Hello world!"
+}
+
+func takesHelloWorld(str: String) {
+    print(str)
+}
+
+func addTwoNums(num1: Int, num2: Int) -> Int {
+    return num1 + num2
+}
 
