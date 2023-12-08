@@ -197,3 +197,9 @@ func addTwoNums(num1: Int, num2: Int) -> Int {
     return num1 + num2
 }
 
+// optional param + overload
+func printHelloWorld(str: String = "Hello world!")
+{
+    print(str)
+}
+
