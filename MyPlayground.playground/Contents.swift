@@ -203,3 +203,48 @@ func printHelloWorld(str: String = "Hello world!")
     print(str)
 }
 
+
+// closures (anonymous funcs)
+var myClosure = {(name: String) -> () in
+    print("This is a closure \(name)")
+}
+
+
+// structures
+struct MenuItem {
+    let name: String
+    var price: Double
+    
+    // initializer == ctor
+//    init(name: String, price: Double) {
+//        self.name = name
+//        self.price = price
+//    }
+    
+    func getInformation() -> String {
+        return "\(name): \(price)"
+    }
+    
+    mutating func increasePrice(newPrice: Double) {
+        price = newPrice
+    }
+}
+
+class Menu {
+    let entrees: [String]
+    let drinks: [String]
+    let desserts: [String]
+    
+    // computed property
+    var menuItemCount: Int {
+        return entrees.count + drinks.count + desserts.count
+    }
+    
+    init(entrees: [String], drinks: [String], desserts: [String]) {
+        self.entrees = entrees
+        self.drinks = drinks
+        self.desserts = desserts
+    }
+}
+
+
